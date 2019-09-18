@@ -1,4 +1,4 @@
-![](image\affrep.png)
+![](image/affrep.png)
 
 # Modul Praktikum Dasar Pemrograman
 
