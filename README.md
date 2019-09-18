@@ -1,4 +1,4 @@
-![Affandes Logo](docs\image\affrep.png)
+![Affandes Logo](docs/image/affrep.png)
 
 # Modul Praktikum Dasar Pemrograman
 
