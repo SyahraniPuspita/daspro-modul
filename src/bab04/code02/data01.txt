@@ -1,0 +1,1 @@
+Selamat, Anda berhasil mengambil data dari file data01.txt
