@@ -11,14 +11,14 @@ public class Nest01 {
         String jk = input.nextLine();
         System.out.print("Tinggi badan (cm): ");
         int tinggi = input.nextInt();
-        System.out.print("Berat badan (cm): ");
-        int berat = input.nextInt();
 
         double ideal;
         if( jk.equalsIgnoreCase("L") ) {
             ideal = tinggi - 100 - (tinggi - 100) / 10;
-        } else {
+        } else if( jk.equalsIgnoreCase("P") ) {
             ideal = tinggi - 104;
+        } else {
+            ideal = 0;
         }
 
         System.out.println("Hai " + nama + ", berat ideal anda adalah " + ideal + "kg.");
