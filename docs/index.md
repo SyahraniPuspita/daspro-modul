@@ -368,47 +368,463 @@ public class KotakBiodata {
 
 ## 2. Variabel dan Tipe Data
 
-### Variabel
+Pada bagian ini mahasiswa akan mempelajari tentang variabel dan tipe data pada Java. Pembahasan dibagi menjadi 2 (dua), yaitu variabel dan tipe data.
 
-#### Konsep
+### 2.1 Variabel
 
-#### Contoh
+Variabel pada pemrograman Java merupakan sesuatu yang dapat digunakan untuk menyimpan data atau nilai. Nilai yang disimpan dapat digunakan kembali untuk proses pada pemrograman.
 
-### Tipe Data
+### 2.2 Latihan 1
+
+Salinlah kode di bawah ini. Kemudian perhatikan hasilnya!
+
+1. Program Var 1
+
+   ```java
+   public class Var01 {
+       public static void main(String[] args) {
+           String nama = "Budi";
+           System.out.println("Hai " + nama);
+       }
+   }
+   ```
+
+2. Program Var 2
+
+   ```java
+   public class Var02 {
+       public static void main(String[] args) {
+           String nama = "Budi";
+           System.out.print("Hai ");
+           System.out.println(nama);
+       }
+   }
+   ```
+
+3. Program Var 3
+
+   ```java
+   public class Var03 {
+       public static void main(String[] args) {
+           String nama = "Budi";
+           System.out.println("Selamat ya " + nama);
+           System.out.println("Kamu sudah bisa menggunakan variabel");
+       }
+   }
+   ```
+
+   
+
+4. Program Var 4
+
+   ```java
+   public class Var04 {
+       public static void main(String[] args) {
+           String nama = "Budi";
+           System.out.println("Hai " + nama + ", ini adalah baris pertama.");
+           System.out.println("Tapi, ini adalah baris kedua.");
+           System.out.println("Apakah kamu mengerti, " + nama);
+       }
+   }
+   ```
+
+   
+
+### 2.3 Tipe Data
+
+Tipe data juga disebut dengan jenis data. Data yang disimpan pada variabel memiliki jenis-jenis tertentu. Ada tipe data primitif dan tipe data non-primitif.
+
+#### 2.3.1 Tipe Data Primitif
+
+Tipe data primitif terdiri dari tipe data angka dan boolean.
+
+1. Tipe data Angka, terdiri dari
+   1. Integer
+      1. Long
+      2. Int
+      3. Short
+      4. Byte
+   2. Real
+      1. Float
+      2. Double
+   3. Character
+      1. Char
+2. Tipe data Boolean
+   1. Boolean
+
+#### 2.3.2 Tipe Data Non-Primitif
+
+Tipe data non-primitif terdiri dari tipe data yang berasal dari class, baik class yang dibuat maupun class yang sudah ada di dalam JDK. Contoh tipe data non-primitif adalah: 
+
+1. String
+2. Array, dsb
+
+### 2.4 Latihan 2
+
+Salinlah kode di bawah ini. Kemudian perhatikan hasilnya!
+
+1. Kode TipeData01
+
+   ```java
+   public class TipeData01 {    
+       public static void main(String[] args) {        
+           int nilai_1 = 14;        
+           int nilai_2 = 10;        
+           System.out.println(nilai_1+nilai_2);    
+       }
+   }
+   ```
+
+2. Kode TipeData02
+
+   ```java
+   public class TipeData02 {    
+       public static void main(String[] args) {        
+           int x = 10;        
+           int y = 15;        
+           System.out.println(x+y);        
+           System.out.println(x-y);        
+           System.out.println(x*y);        
+           System.out.println(x/y);    
+       }
+   }
+   ```
+
+3. Kode TipeData03
+
+   ```java
+   public class TipeData03 {    
+       public static void main(String[] args) {        
+           int a = 45;        
+           int b = 10;        
+           System.out.println("Jumlah = " + a+b);        
+           System.out.println("Jumlah = " + (a+b));        
+           System.out.println(a+b + "kg");        
+           System.out.println((a+b) + "kg");    
+       }
+   }
+   ```
+
+4. Kode TipeData04
+
+   ```java
+   public class TipeData04 {    
+       public static void main(String[] args) {        
+           int c = 35;        
+           int d = 12;        
+           System.out.println("Jumlah C + D = " + (c+d));        
+           System.out.println("Jumlah C - D = " + (c-d));        
+           System.out.println("Jumlah C x D = " + c*d);        
+           System.out.println("Jumlah C : D = " + c/d);    
+       }
+   }
+   ```
+
+5. Kode TipeData05
+
+   ```java
+   public class TipeData05 {    
+       public static void main(String[] args) {        
+           String nama = "Budi";        
+           int umur = 19;        
+           System.out.println("Hari ini " + nama + " sudah " + umur + " tahun. 😀");    
+       }
+   }
+   ```
+
+6. Kode TipeData06
+
+   ```java
+   public class TipeData06 {    
+       public static void main(String[] args) {        
+           String nama;        
+           int umur;        
+           nama = "Budi";        
+           umur = 19;        
+           System.out.println("Hari ini " + nama + " sudah " + umur + " tahun. 😀");    
+       }
+   }
+   ```
+
+7. Kode TipeData07
+
+   ```java
+   public class TipeData07 {    
+       public static void main(String[] args) {        
+           String nama = "Andi";        
+           int umur = 21;        
+           System.out.println("Hari ini " + nama + " sudah " + umur + " tahun. 😀");
+           nama = "Budi";        
+           umur = 19;        
+           System.out.println("Hari ini " + nama + " sudah " + umur + " tahun. 😀");    
+       }
+   }
+   ```
+
+
 
 ## 3. Operator
 
-### Operator Aritmatika
+Pada bagian ini mahasiswa akan mempelajari tentang operator pada Java. Operator yang dibahas ada 4 jenis, yaitu: operator aritmatika, increment/decrement, perbandingan dan logika.
 
-### Operator Increment dan Decrement
+### 3.1 Operator Aritmatika
 
-### Operator Perbandingan
+Operator aritmatika adalah operator umum yang biasa digunakan untuk kalkulasi dasar pada matematika, seperti penjumlahan, perkalian dan sebagainya. Perhatikan contoh berikut.
 
-### Operator Logika
+```java
+public class Ari01 {    
+    public static void main(String[] args) {        
+        int a = 6;        
+        int b = 9;        
+        int c = 12;        
+        int hasil1 = a + b - c;        
+        int hasil2 = a * b / c;        
+        int hasil3 = a + b * c;        
+        int hasil4 = a + b % c;        
+        int hasil5 = (a + b) / c;        
+        int hasil6 = (a + b) % c;        
+        System.out.println(hasil1);        
+        System.out.println(hasil2);        
+        System.out.println(hasil3);        
+        System.out.println(hasil4);        
+        System.out.println(hasil5);        
+        System.out.println(hasil6);    
+    }
+}
+```
+
+### 3.2 Operator Increment dan Decrement
+
+Operator increment dan decrement digunakan untuk memodifikasi nilai variabel menjadi bertambah atau berkurang.
+
+```java
+public class Inc01 {    
+    public static void main(String[] args) {        
+        // Buat variabel awal        
+        int a = 0;        
+        int b = 0;        
+        int c = 9;        
+        int d = 9;        
+        // Print ke 1        
+        System.out.println("Print ke 1");        
+        System.out.println("A = " + a++);        
+        System.out.println("B = " + ++b);        
+        System.out.println("C = " + c--);        
+        System.out.println("D = " + --d);    
+    }
+}
+```
+
+### 3.3 Operator Perbandingan
+
+Operator perbandingan adalah operator yang digunakan untuk membandingkan dua variabel atau nilai. Perhatikan contoh berikut.
+
+```java
+public class Comp01 {    
+    public static void main(String[] args) {        
+        int a = 8;        
+        int b = 19;        
+        int c = 4;        
+        int d = 25;        
+        boolean hasil1 = a == 8;        
+        boolean hasil2 = a > b;        
+        boolean hasil3 = c < d;        
+        boolean hasil4 = b != d;        
+        System.out.println(hasil1);        
+        System.out.println(hasil2);        
+        System.out.println(hasil3);        
+        System.out.println(hasil4);    
+    }
+}
+```
+
+Perhatikan juga contoh berikut.
+
+```java
+public class Comp02 {    
+    public static void main(String[] args) {        
+        int x = 6;        
+        int y = 7;        
+        int z = 9;        
+        boolean hasil1 = x + 4 > y + z;        
+        boolean hasil2 = y + x / 2 < z + y /2;        
+        boolean hasil3 = x * x > (x + z) * (z - y);        
+        System.out.println(hasil1);        
+        System.out.println(hasil2);        
+        System.out.println(hasil3);    
+    }
+}
+```
+
+Perhatikan juga contoh berikut.
+
+```java
+public class Comp03 {    
+    public static void main(String[] args) {        
+        int x = 9;        
+        int y = 10;        
+        boolean hasil1 = ++x >= y;        
+        boolean hasil2 = x++ <= y++;        
+        boolean hasil3 = x-- < --y;        
+        boolean hasil4 = x < y;        
+        System.out.println(hasil1);        
+        System.out.println(hasil2);        
+        System.out.println(hasil3);        
+        System.out.println(hasil4);    
+    }
+}
+```
+
+### 3.4 Operator Logika
+
+Operator logika digunakan untuk melakukan operasi logika. Perhatikan contoh berikut.
+
+```java
+public class Log01 {    
+    public static void main(String[] args) {        
+        boolean x = false & false;        
+        boolean y = false & true;        
+        boolean z = true & true;        
+        boolean hasil1 = x && y;        
+        boolean hasil2 = y && z;        
+        boolean hasil3 = z && x;        
+        System.out.println("x = " + x);        
+        System.out.println("y = " + y);        
+        System.out.println("z = " + z);        
+        System.out.println(hasil1);        
+        System.out.println(hasil2);        
+        System.out.println(hasil3);    
+    }
+}
+```
 
 ## 4. Input dan Output
 
-### Scanner
+Pada bagian ini mahasiswa akan mempelajari tentang mekanisme input dan output pada Java.
 
-### BufferedReader
+### 4.1 Scanner
 
-### JOptionPane
+Scanner digunakan untuk membaca inputan dari keyboard (System.in). Perhatikan contoh berikut.
 
-### Input dari File
+```java
+import java.util.Scanner;
+public class Scan01 {    
+    public static void main(String[] args) {        
+        // Membuat object Scanner, membaca Standard Input        
+        Scanner scanner = new Scanner(System.in);        
+        // Ambil data dari keyboard        
+        String teks = scanner.nextLine();        
+        // Cetak data        
+        System.out.println("Teks : " + teks);    
+    }
+}
+```
 
-### Output ke File
+Berikut contoh lain.
+
+```java
+import java.util.Scanner;
+public class Scan02 {    
+    public static void main(String[] args) {        
+        Scanner scanner = new Scanner(System.in);        
+        System.out.print("Input teks: ");        
+        String teks = scanner.nextLine();        
+        System.out.println("Output teks = " + teks);    
+    }
+}
+```
+
+### 4.2 BufferedReader
+
+```java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Buff01 {    
+    public static void main(String[] args) {        
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        try {            
+            System.out.print("Input = ");            
+            String teks = reader.readLine();            
+            System.out.println("Output = " + teks);        
+        } catch (IOException e) {            
+            System.out.println("Error saat input data. Silahkan coba lagi.");        
+        }    
+    }
+}
+```
+
+### 4.3 JOptionPane
+
+```java
+import javax.swing.*;
+
+public class Jop01 {    
+    public static void main(String[] args) {        
+        String nama = JOptionPane.showInputDialog("Input nama lengkap"); 
+        System.out.println("Hai " + nama);    
+    }
+}
+```
+
+### 4.4 Input dari File
+
+```java
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Scanner;
+
+public class Inp01 {    
+    public static void main(String[] args) {        
+        Path file = Paths.get("src/bab04/code02/data01.txt");        
+        try {            
+            Scanner scanner = new Scanner(file);            
+            System.out.println("Output: " + scanner.nextLine());        
+        } catch (IOException e) {            
+            System.out.println("File tidak ditemukan.");        
+        }    
+    }
+}
+```
+
+### 4.5 Output ke File
+
+```java
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class Out01 {    
+    public static void main(String[] args) {        
+        String teks = "Hai Programmer. Teks ini akan disimpan ke file.";        
+        Path file = Paths.get("src/bab04/code02/out01.txt");        
+        try {            
+            Files.write(file, teks.getBytes());        
+        } catch (IOException e) {            
+            System.out.println("Error saat menyimpan ke file");        
+        }    
+    }
+}
+```
 
 ## 5. Percabangan
 
-### Percabangan If dan If Else
+Pada bagian ini mahasiswa akan mempelajari tentang aliran percabangan yang meliputi if dan switch.
 
-### Percabangan Switch Case
+### 5.1 Percabangan If dan If Else
+
+### 5.2 Percabangan Switch Case
 
 ## 6. Perulangan
 
-### Perulangan For
+Pada bagian ini mahasiswa akan mempelajari tentang aliran perulangan pada Java yang meliputi for dan while.
 
-### Perulangan While dan Do While
+### 6.1 Perulangan For
+
+### 6.2 Perulangan While dan Do While
 
 ## Lisensi
 
